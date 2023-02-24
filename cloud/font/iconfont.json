@@ -1,0 +1,37 @@
+{
+  "id": "3881763",
+  "name": "paly",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10562545",
+      "name": "Player, play",
+      "font_class": "pause",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "10562548",
+      "name": "Player, pause",
+      "font_class": "playing",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "14538736",
+      "name": "player forward_filled",
+      "font_class": "play-right",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "14538744",
+      "name": "player back_filled",
+      "font_class": "play-left",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    }
+  ]
+}

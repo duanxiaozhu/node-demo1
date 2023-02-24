@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.cover{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: url(https://pic3.zhimg.com/v2-367d23ca239a5d0774fd819d3ae1cbae_r.jpg)center center no-repeat;
+    background-size: cover;
+}
+.cover::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+.cover .player{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    padding: 15px;
+    width: 350px;
+    background:  rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: rgb(96, 96, 96);
+    z-index: 1;
+}
+.player .main{
+    display: flex;
+}
+.player .buttons .iconfont {
+    font-size: 32px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.player .buttons .iconfont:hover {
+    opacity: 0.7;
+}
+.player .texts{
+    margin-left: 35px;
+    font-size: 11px;
+}
+.player .texts h3{
+    margin-bottom: 3px;
+}
+.player .texts p{
+    margin-bottom: 1px;
+}
+.player .bar{
+    margin-top: 5px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+.player .bar .progress{
+    width: 15%;
+    height: 100%;
+    background: currentColor;
+    border-radius: 3px;
+}
+.player .time{
+    text-align-last: right;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.cloud{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    z-index: 0;
+    border-radius: 50px;
+    width: 320px;
+    height: 80px;
+    background:rgb(96, 96, 96);;
+}
+.cloud::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background:rgb(96, 96, 96);;
+    border-radius: 70%;
+    bottom: -150px;
+
+}
+.clouds{
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgb(96, 96, 96);;
+}
+.clouds::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(96, 96, 96);;
+    left: 85px;
+    top: -40px;
+}
+.rain{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.rain span{
+    width: 8px;
+    height: 10px;
+    background: white;
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: aninate linear 2s infinite;
+    animation-duration: calc(var(--i)*2s);
+}
+@keyframes aninate{
+    0%{
+        transform: translateY(0) scale(0);
+    }
+    100%{
+        transform: translateY(175px) scale(.8);
+    }
+}
